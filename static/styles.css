@@ -29,8 +29,33 @@ body{
     color: rgb(226, 204, 108);
 }
 
+.name_header{
+    color: rgb(226, 204, 108);
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#aboutme_nav_link{
+    color: rgb(226, 204, 108);
+    text-decoration-color: rgb(105, 105, 105);
+}
+
+#soundcloud_nav_link{
+    color: rgb(221, 124, 12);
+    text-decoration-color: rgb(105, 105, 105);
+}
+
+#youtube_nav_link{
+    color: rgb(182, 12, 12);
+    text-decoration-color: rgb(105, 105, 105);
+}
+
 .lead{
     color: azure;
+    font-family: 'Dosis', sans-serif;
 }
 
 .card{

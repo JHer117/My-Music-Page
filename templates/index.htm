@@ -12,6 +12,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Dosis&display=swap" rel="stylesheet">
+
+    <script src="C:\Users\white\Desktop\My Projects\Music Site\static\index.js"></script>
+
     <title>Josh | Musician * Singer * Songwriter</title>
 </head>
 <body>
@@ -21,13 +26,13 @@
           <div class="bg-dark p-4">
               <ul id="navtoggler" class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="/C:\Users\white\Desktop\My Projects\Music Site\templates\about_me.html">About Me</a>
+                    <a id="aboutme_nav_link" class="nav_button_links" class="nav-link" href="/C:\Users\white\Desktop\My Projects\Music Site\templates\about_me.html">About Me</a>
                 </li>
                 <li class="nav-item">  
-                    <a class="nav-link" href="https://soundcloud.com/thegreatfable" target="_blank">SoundCloud</a>
+                    <a id="soundcloud_nav_link" class="nav_button_links" class="nav-link" href="https://soundcloud.com/thegreatfable" target="_blank">SoundCloud</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.youtube.com/watch?v=h5IfFQDFB4M" target="_blank">YouTube</a>
+                    <a id="youtube_nav_link" class="nav_button_links" class="nav-link" href="https://www.youtube.com/watch?v=h5IfFQDFB4M" target="_blank">YouTube</a>
                 </li>
               </ul>
           </div>
@@ -41,7 +46,11 @@
     <div class="jumbotron bg-dark">
 
         <div class="container-fluid text-center">
-            <h1 id="title_header" class="display-1">The Great Fable</h1>
+            <h1 id="title_header" class="display-1"> 
+                <a class="name_header" href="#">The</a>
+                <a class="name_header" href="#">Great</a>
+                <a class="name_header" href="#">Fable</a> 
+            </h1>
             <div class="row">
                 <div class="col">
                     <p class="lead text-center text-justify">Musician | Singer | Songwriter</p>
