@@ -1,0 +1,53 @@
+@media only screen and (max-width:600px) {
+    .nav-link {
+        display: inline;
+    }
+}
+
+*{
+    color: azure;
+}
+
+body{
+    background-color: rgb(43, 43, 43);
+    /* background: url("https://i.imgur.com/UchrwtG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#aboutme_nav_link{
+    color: rgb(226, 204, 108);
+    text-decoration-color: rgb(66, 61, 61);
+}
+
+#contactme_nav_link{
+    color: azure;
+    text-decoration-color: rgb(105, 105, 105);
+}
+
+#soundcloud_nav_link{
+    color: rgb(221, 124, 12);
+    text-decoration-color: rgb(105, 105, 105);
+}
+
+#youtube_nav_link{
+    color: rgb(182, 12, 12);
+    text-decoration-color: rgb(105, 105, 105);
+}
+
+#name_header{
+    color: rgb(226, 204, 108);
+}
+
+#name_header, #about_me_header, #about_me_p{
+    margin-bottom: 50px;
+}
+
+.info_p{
+    margin-bottom: 50px;
+}
