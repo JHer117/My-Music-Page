@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="C:\Users\white\Desktop\My Projects\Music Site\static\styles.css">
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
@@ -20,13 +21,16 @@
     <title>Josh | Musician * Singer * Songwriter</title>
 </head>
 <body>
-
+    <div id="up_top"></div>
     <div class="pos-f-t">
         <div class="collapse" id="navbarToggleExternalContent">
           <div class="bg-dark p-4">
               <ul id="navtoggler" class="nav flex-column">
                 <li class="nav-item">
                     <a id="aboutme_nav_link" class="nav_button_links" class="nav-link" href="/C:\Users\white\Desktop\My Projects\Music Site\templates\about_me.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a id="contactme_nav_link" class="nav_button_links" class="nav-link" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">  
                     <a id="soundcloud_nav_link" class="nav_button_links" class="nav-link" href="https://soundcloud.com/thegreatfable" target="_blank">SoundCloud</a>
@@ -72,7 +76,7 @@
         </div>
     </div>
 
-    <div class="card bg-dark text-white">
+    <div id="youtube_card" class="card bg-dark text-white">
         <img id="youtube_img" class="card-img" src="C:\Users\white\Desktop\My Projects\Music Site\static\images\youtube.png" alt="youtube image">
         <div class="middle">
             <div>
@@ -82,6 +86,29 @@
                 </a>
             </div>
         </div>
+    </div>
+
+    <div id="contact" class="scrollLink container bg-dark">
+        <div class="d-flex justify-content-center">
+            <h2 id="contact_me">Contact Me</h2>
+        </div>
+        <div class="d-flex justify-content-center">
+            <form action="index.htm" method="post">
+                <input class="contact_form_input" type="text" placeholder="Name">
+                <input class="contact_form_input" type="text" placeholder="Phone #">
+                <input class="contact_form_input" type="text" placeholder="Email">
+                <textarea class="contact_form_input" placeholder="Say Hi!"></textarea>
+                <button class="btn-dark" type="submit" id="contact_btn">Send it!</button>
+            </form>
+        </div>
+
+    </div>
+    
+    <div id="back_to_top" class="d-flex justify-content-end">
+        <a href="#up_top">
+            <img class="img-fluid" id="up_btn_img" src="C:\Users\white\Desktop\My Projects\Music Site\static\images\up_arrow.png" alt="up arrow">
+        </a> 
+
     </div>
 
     <!-- BOTTOM PAGE NAV BAR -->

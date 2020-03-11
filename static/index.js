@@ -8,11 +8,41 @@ $(document).ready(function(){
           
     });
 
-    $("#aboutme_nav_link #soundcloud_nav_link #youtube_nav_link").on("mousover", function() {
+    $("#aboutme_nav_link #soundcloud_nav_link #youtube_nav_link #contactme_nav_link").on("mousover", function() {
         $(this).css("text-decoration","line-through");
     }).on("mouseout", function() {
         $(this).css("text-decoration","none");
     });
 
+    
+ 
+    // $(document).on('click', 'a[href^="#"]', function (e) {
+    //     e.preventDefault();
+    //     $('html, body').stop().animate({
+    //         scrollTop: $($(this).attr('href')).offset().top
+    //     }, 1000, 'linear');
+    // });
+    
+    document.querySelectorAll('a[href^="#contact"]').forEach($anchor => {
+        $anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start' //scroll to top of the target element
+            });
+        });
+    });
+    
+    document.querySelectorAll('a[href^="#up_top"]').forEach($anchor => {
+        $anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    });
+    
+    
 
 });

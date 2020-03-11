@@ -17,9 +17,7 @@
 }
 
 /* EDIT NAV BAR POSITION */
-/* .pos-f-t{
-    
-} */
+
 
 body{
     background-color: rgb(43, 43, 43);
@@ -38,9 +36,15 @@ a{
     text-decoration: none;
 }
 
+
 #aboutme_nav_link{
     color: rgb(226, 204, 108);
     text-decoration-color: rgb(105, 105, 105);
+}
+
+#contactme_nav_link{
+    color: azure;
+    text-decoration: rgb(105, 105, 105);
 }
 
 #soundcloud_nav_link{
@@ -59,7 +63,7 @@ a{
 }
 
 .card{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 /* ADD FADE IN/OUT TEXT */
@@ -105,3 +109,73 @@ a{
       color: rgb(182, 12, 12);
   }
   /* END FADE IN/OUT */
+
+  #youtube_card{
+      margin-bottom: 100px;
+  }
+
+  #contact{
+      max-width: 45rem;
+      margin-bottom: 50px;
+      border-radius: 4px;
+  }
+
+  #contact_me{
+    color: rgb(226, 204, 108);
+  }
+
+  .contact_form_input{
+      display: block;
+      width: 100%;
+      margin: 15px 0;
+      box-sizing: border-box;
+      border: 0;
+      background: rgb(61, 61, 61);
+      padding: 10px 150px;
+      color: azure;
+      border-radius: 3px;
+      outline: none;
+    
+  }
+
+  .contact_form_input:focus{
+      box-shadow: 0 0 10px 4px rgb(117, 112, 90);
+  }
+
+  textarea.contact_form_input{
+      resize: none;
+      height: 120px;
+  }
+
+  #contact_btn{
+      color: rgb(226, 204, 108);
+      border-radius: 20px;
+      border-style: solid;
+      border-width: 2px;
+      border-color: rgb(43, 42, 42);
+      padding: 5px 25px;
+      float: right;
+      margin-bottom: 10px;
+  }
+
+  #contact_btn:hover{
+      box-shadow: 0 0 10px 4px rgb(117, 112, 90); 
+  }
+
+
+  #up_btn_img{
+    max-width: 3rem;
+    border-radius: 20px;
+  }
+
+
+  #back_to_top{
+      margin-bottom: 25px;
+  }
+  
+  
+
+  #back_to_top img:hover{
+    box-shadow: 0 0 10px 4px rgb(117, 112, 90); 
+
+  }
