@@ -125,6 +125,7 @@ a{
   }
 
   .contact_form_input{
+      text-align: center;
       display: block;
       width: 100%;
       margin: 15px 0;
