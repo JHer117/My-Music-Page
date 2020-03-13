@@ -15,13 +15,6 @@ $(document).ready(function(){
     });
 
     
- 
-    // $(document).on('click', 'a[href^="#"]', function (e) {
-    //     e.preventDefault();
-    //     $('html, body').stop().animate({
-    //         scrollTop: $($(this).attr('href')).offset().top
-    //     }, 1000, 'linear');
-    // });
     
     document.querySelectorAll('a[href^="#contact"]').forEach($anchor => {
         $anchor.addEventListener('click', function (e) {

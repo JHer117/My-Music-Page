@@ -51,3 +51,16 @@ a{
 .info_p{
     margin-bottom: 50px;
 }
+
+#back_btn{
+    color: rgb(216, 210, 210);
+    text-decoration: underline;
+    text-decoration-color: azure;
+    font-size: 18px;
+}
+
+#back_btn:hover{
+    text-shadow: 12px 12px rgb(226, 204, 108);
+    font-weight: bold;
+    font-size: larger;
+}
