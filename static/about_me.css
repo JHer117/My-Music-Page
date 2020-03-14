@@ -19,6 +19,20 @@ a{
     text-decoration: none;
 }
 
+#menu{
+    /* display: inline-block; */
+    color: rgb(226, 204, 108);
+}
+
+button:focus{
+   outline: 0;
+}
+
+nav button:hover{
+    box-shadow: 0 0 10px 4px rgb(226, 204, 108);
+
+}
+
 
 #aboutme_nav_link{
     color: rgb(226, 204, 108);
@@ -57,10 +71,12 @@ a{
     text-decoration: underline;
     text-decoration-color: azure;
     font-size: 18px;
+    margin-bottom: 100px;
 }
 
 #back_btn:hover{
-    text-shadow: 12px 12px rgb(226, 204, 108);
+    text-shadow:  0.4em -0.3em 0.1em rgb(226, 204, 108);
     font-weight: bold;
     font-size: larger;
+
 }
