@@ -36,6 +36,20 @@ a{
     text-decoration: none;
 }
 
+#menu{
+    /* display: inline-block; */
+    color: rgb(226, 204, 108);
+}
+
+button:focus{
+   outline: 0;
+}
+
+nav button:hover{
+    box-shadow: 0 0 10px 4px rgb(226, 204, 108);
+
+}
+
 
 #aboutme_nav_link{
     color: rgb(226, 204, 108);
@@ -112,6 +126,13 @@ a{
 
   #youtube_card{
       margin-bottom: 100px;
+  }
+
+  #status{
+      text-align: center;
+      margin-bottom: 30px;
+      color: rgb(45, 177, 45);
+      display: block;
   }
 
   #contact{

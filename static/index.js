@@ -38,27 +38,41 @@ $(document).ready(function(){
     
 
     $("#contact_btn").click(function (event) {
-        event.preventDefault()
+        // event.preventDefault();
 
-        const name = $("#name").val()
-        const phone = $("#phone").val()
-        const email = $("#email").val()
-        const message = $("#message").val()
-        var status = $("#status")
-        status.empty()
+        const name = $("#name").val();
+        const phone = $("#phone").val();
+        const email = $("#email").val();
+        const message = $("#message").val();
+        var status = $("#status");
+        status.empty();
 
+        
         if(name.length < 2) {
-            status.append("<p>Please Enter a name!</p>")
+            event.preventDefault();
+            status.append("<h5>Error: </h5>")
+            status.append("<h6>Please Enter your name!</h6>")
         }
         
         if(email.length > 5 && email.includes("@") && email.includes(".")) {
-            status.append("<p>Cool email!</p>")
+            status.append("")
         } else {
-            status.append("<p>Invalid Email!</p>")
+            event.preventDefault();
+            status.append("<h5>Error: </h5>")
+            status.append("<div><h6>Invalid Email!</h6></div>")
         }
 
-        
+        if(message.length < 2) {
+            event.preventDefault();
+            status.append("<h5>Error: </h5>")
+            status.append("<div><h6>At least say Hi!</h6></div>")
+        }
+
+
+
     });
+
+
     
 
 });
