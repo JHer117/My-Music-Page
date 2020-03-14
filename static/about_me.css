@@ -19,6 +19,20 @@ a{
     text-decoration: none;
 }
 
+#menu{
+    /* display: inline-block; */
+    color: rgb(226, 204, 108);
+}
+
+button:focus{
+   outline: 0;
+}
+
+nav button:hover{
+    box-shadow: 0 0 10px 4px rgb(226, 204, 108);
+
+}
+
 
 #aboutme_nav_link{
     color: rgb(226, 204, 108);
@@ -57,10 +71,85 @@ a{
     text-decoration: underline;
     text-decoration-color: azure;
     font-size: 18px;
+    margin: 40px 0 100px 0;
+    padding-right: 50px;
 }
 
 #back_btn:hover{
-    text-shadow: 12px 12px rgb(226, 204, 108);
+    text-shadow:  0.4em -0.3em 0.1em rgb(226, 204, 108);
     font-weight: bold;
     font-size: larger;
+
 }
+
+/* 
+img{
+    max-width: 30rem;
+} */
+
+.boxes{
+    /* transform: translate(-50%,-50%); */
+    background: rgb(226, 204, 108);
+    overflow: hidden;
+}
+
+.figure{
+    width: 100%;
+    height: 100%;
+}
+
+.figure img{
+    width: 100%;
+    transition: .5s;
+}
+
+.boxes:hover .figure img{
+    transform: rotate(-10deg) scale(1.3);
+    opacity: .8;
+}
+
+.caption{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    /* background: rgb(226, 204, 108); */
+}
+
+.caption:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgb(216, 210, 210);
+    border-bottom: 1px solid rgb(216, 210, 210);
+    box-sizing: border-box;
+    transition: .5s;
+    transform: scale(0,1);
+}
+
+.boxes:hover .caption:before{
+    transform: scale(1,1);
+}
+
+.caption:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid rgb(216, 210, 210);
+    border-right: 1px solid rgb(216, 210, 210);
+    box-sizing: border-box;
+    transition: .5s;
+    transform: scale(1,0);
+}
+
+.boxes:hover .caption:after{
+    transform: scale(1,1);
+}
+
