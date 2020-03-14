@@ -8,7 +8,10 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="C:\Users\white\Desktop\My Projects\Music Site\static\styles.css">
+    <!-- <link rel="stylesheet" href="C:\Users\white\Desktop\My Projects\Music Site\static\styles.css"> -->
+
+    <link rel="stylesheet" href="C:\Users\Tutton\Desktop\Projects\myMusic_site\My-Music-Page\static\styles.css">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 
     
@@ -19,7 +22,12 @@
     
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Dosis&display=swap" rel="stylesheet">
 
-    <script src="C:\Users\white\Desktop\My Projects\Music Site\static\index.js"></script>
+    <!-- <script src="C:\Users\white\Desktop\My Projects\Music Site\static\index.js"></script> -->
+
+    <script src="C:\Users\Tutton\Desktop\Projects\myMusic_site\My-Music-Page\static\index.js"></script>
+
+    <script src="{{url_for('static', filename='index.js')}}"></script>
+
 
     <title>Josh | Musician * Singer * Songwriter</title>
 </head>
@@ -30,7 +38,9 @@
           <div class="bg-dark p-4">
               <ul id="navtoggler" class="nav flex-column">
                 <li class="nav-item">
-                    <a id="aboutme_nav_link" class="nav_button_links" class="nav-link" href="/C:\Users\white\Desktop\My Projects\Music Site\templates\about_me.html">About Me</a>
+                    <!-- STATIC LINK -->
+                    <!-- /C:\Users\white\Desktop\My Projects\Music Site\templates\about_me.html -->
+                    <a id="aboutme_nav_link" class="nav_button_links" class="nav-link" href="/about_me">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a id="contactme_nav_link" class="nav_button_links" class="nav-link" href="#contact">Contact</a>
@@ -68,7 +78,7 @@
     </div>
 
     <div class="card bg-dark text-white">
-        <img class="card-img" src="C:\Users\white\Desktop\My Projects\Music Site\static\images\soundcloud.jpg" alt="soundcloud image">
+        <img class="card-img" src="https://imgur.com/q0maIoF.jpg" alt="soundcloud image">
         <div class="middle">
             <div>
                 <a style="text-decoration: none;" href="https://soundcloud.com/thegreatfable" target="_blank">
@@ -80,7 +90,7 @@
     </div>
 
     <div id="youtube_card" class="card bg-dark text-white">
-        <img id="youtube_img" class="card-img" src="C:\Users\white\Desktop\My Projects\Music Site\static\images\youtube.png" alt="youtube image">
+        <img id="youtube_img" class="card-img" src="https://imgur.com/m7tyOS2.jpg" alt="youtube image">
         <div class="middle">
             <div>
                 <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=h5IfFQDFB4M" target="_blank">
@@ -109,7 +119,7 @@
     
     <div id="back_to_top" class="d-flex justify-content-end">
         <a href="#up_top">
-            <img class="img-fluid" id="up_btn_img" src="C:\Users\white\Desktop\My Projects\Music Site\static\images\up_arrow.png" alt="up arrow">
+            <img class="img-fluid" id="up_btn_img" src="https://imgur.com/xa8mxUS.jpg" alt="up arrow">
         </a> 
 
     </div>
