@@ -15,3 +15,5 @@ def landing():
 def about_me():
     return render_template("about_me.html")
 
+# def send_email():
+#     return 

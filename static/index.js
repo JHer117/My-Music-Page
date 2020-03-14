@@ -36,6 +36,29 @@ $(document).ready(function(){
         });
     });
     
+
+    $("#contact_btn").click(function (event) {
+        event.preventDefault()
+
+        const name = $("#name").val()
+        const phone = $("#phone").val()
+        const email = $("#email").val()
+        const message = $("#message").val()
+        var status = $("#status")
+        status.empty()
+
+        if(name.length < 2) {
+            status.append("<p>Please Enter a name!</p>")
+        }
+        
+        if(email.length > 5 && email.includes("@") && email.includes(".")) {
+            status.append("<p>Cool email!</p>")
+        } else {
+            status.append("<p>Invalid Email!</p>")
+        }
+
+        
+    });
     
 
 });
