@@ -66,6 +66,31 @@ nav button:hover{
     margin-bottom: 50px;
 }
 
+.info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 20px;
+    transition: .5s;
+    text-align: center;
+    opacity: 0;
+}
+
+.info h2{
+    margin: 20px 0 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: azure;
+}
+
+.info p{
+    margin: 0;
+    padding: 0;
+    color: azure;
+
+}
+
 #back_btn{
     color: rgb(216, 210, 210);
     text-decoration: underline;
@@ -91,6 +116,11 @@ img{
     /* transform: translate(-50%,-50%); */
     background: rgb(226, 204, 108);
     overflow: hidden;
+}
+
+.boxes:hover .info{
+    opacity: 1;
+
 }
 
 .figure{
