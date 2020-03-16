@@ -4,6 +4,14 @@
     }
 }
 
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    #name_header{
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+  }
+
 *{
     color: azure;
 }
@@ -15,23 +23,29 @@ body{
     background-size: cover; */
 }
 
-a{
+/* a{
     text-decoration: none;
-}
+} */
 
+/* 
 #menu{
-    /* display: inline-block; */
     color: rgb(226, 204, 108);
-}
+} */
 
-button:focus{
+/* button:focus{
    outline: 0;
-}
+} */
 
-nav button:hover{
+/* nav button:hover{
     box-shadow: 0 0 10px 4px rgb(226, 204, 108);
 
+} */
+
+
+#aboutme_nav_link, #contactme_nav_link, #soundcloud_nav_link, #youtube_nav_link{
+    font-size: 16px;
 }
+
 
 
 #aboutme_nav_link{
@@ -55,6 +69,7 @@ nav button:hover{
 }
 
 #name_header{
+    margin-top: 30px;
     color: rgb(226, 204, 108);
 }
 
@@ -96,7 +111,7 @@ nav button:hover{
     text-decoration: underline;
     text-decoration-color: azure;
     font-size: 18px;
-    margin: 40px 0 100px 0;
+    margin: 20px 0 15px 0;
     padding-right: 50px;
 }
 
@@ -107,15 +122,12 @@ nav button:hover{
 
 }
 
-/* 
-img{
-    max-width: 30rem;
-} */
 
+/* FOR TRANSITIONAL CARDS */
 .boxes{
-    /* transform: translate(-50%,-50%); */
     background: rgb(226, 204, 108);
     overflow: hidden;
+    padding: 5px;
 }
 
 .boxes:hover .info{
@@ -182,4 +194,20 @@ img{
 .boxes:hover .caption:after{
     transform: scale(1,1);
 }
+
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    border: 7px solid;
+    box-shadow: inset 0 0 2.5px 2px rgb(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(45deg, rgb(226, 204, 108), azure);
+}
+
+
 

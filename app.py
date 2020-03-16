@@ -1,6 +1,5 @@
 
-from config import app#, db
-# from models import Users, Bands
+from config import app
 import routes
 
 
