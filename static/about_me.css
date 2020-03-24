@@ -12,8 +12,22 @@
     }
   }
 
+  @media screen and (min-device-width: 486px) and (orientation: portrait){
+    #name_header{
+        font-size: 4rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+  }
+
 *{
     color: azure;
+
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+
 }
 
 body{
@@ -25,7 +39,7 @@ body{
 
 /* STICKY NAV */
 .content {
-    padding: 16px;
+    padding: 10px;
   }
   
 .sticky {
@@ -36,7 +50,7 @@ body{
   
   
 .sticky + .content {
-    padding-top: 60px;
+    padding-top: 40px;
   }
 
   /* END STICKY NAV */
@@ -72,28 +86,12 @@ body{
     color: rgb(226, 204, 108);
 }
 
-#name_header, #about_me_header, #about_me_p{
+
+/* #name_header, #about_me_header, #about_me_p{
     margin-bottom: 50px;
-}
-
-
-/* HOME BTN */
-
-/* #back_btn{
-    color: rgb(216, 210, 210);
-    text-decoration: underline;
-    text-decoration-color: azure;
-    font-size: 18px;
-    margin: 20px 0 15px 0;
-    padding-right: 50px;
-}
-
-#back_btn:hover{
-    text-shadow:  0.4em -0.3em 0.1em rgb(226, 204, 108);
-    font-weight: bold;
-    font-size: larger;
-
 } */
+
+
 
 
 /* SCROLL BAR */
@@ -120,7 +118,7 @@ section{
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-
+    
 }
 
 section .info{
@@ -136,15 +134,15 @@ section .info h2{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
-
-
+    
+    
 }
 
 section:nth-child(1) .info h2{
     background-image: url("https://imgur.com/ELla6Hd.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
+    
 }
 
 section:nth-child(2) .info h2{
@@ -163,11 +161,33 @@ section .info p{
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
+
 }
 
-.lead{
+.info_head{
     margin-bottom: 20px;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 3vw;
 }
+
+/* HOME BTN */
+
+/* #back_btn{
+    color: rgb(216, 210, 210);
+    text-decoration: underline;
+    text-decoration-color: azure;
+    font-size: 18px;
+    margin: 20px 0 15px 0;
+    padding-right: 50px;
+}
+
+#back_btn:hover{
+    text-shadow:  0.4em -0.3em 0.1em rgb(226, 204, 108);
+    font-weight: bold;
+    font-size: larger;
+
+} */
+
 
 /* FANCY CARDS */
 /* .info_p{
