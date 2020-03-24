@@ -23,24 +23,23 @@ body{
     background-size: cover; */
 }
 
-/* a{
-    text-decoration: none;
-} */
+/* STICKY NAV */
+.content {
+    padding: 16px;
+  }
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  
+.sticky + .content {
+    padding-top: 60px;
+  }
 
-/* 
-#menu{
-    color: rgb(226, 204, 108);
-} */
-
-/* button:focus{
-   outline: 0;
-} */
-
-/* nav button:hover{
-    box-shadow: 0 0 10px 4px rgb(226, 204, 108);
-
-} */
-
+  /* END STICKY NAV */
 
 #aboutme_nav_link, #contactme_nav_link, #soundcloud_nav_link, #youtube_nav_link{
     font-size: 16px;
@@ -69,7 +68,7 @@ body{
 }
 
 #name_header{
-    margin-top: 30px;
+    margin-top: 60px;
     color: rgb(226, 204, 108);
 }
 
@@ -77,7 +76,101 @@ body{
     margin-bottom: 50px;
 }
 
-.info_p{
+
+/* HOME BTN */
+
+/* #back_btn{
+    color: rgb(216, 210, 210);
+    text-decoration: underline;
+    text-decoration-color: azure;
+    font-size: 18px;
+    margin: 20px 0 15px 0;
+    padding-right: 50px;
+}
+
+#back_btn:hover{
+    text-shadow:  0.4em -0.3em 0.1em rgb(226, 204, 108);
+    font-weight: bold;
+    font-size: larger;
+
+} */
+
+
+/* SCROLL BAR */
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    border: 7px solid;
+    box-shadow: inset 0 0 2.5px 2px rgb(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(45deg, rgb(226, 204, 108), azure);
+}
+
+/* BG IMG IN TEXT */
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+
+}
+
+section .info{
+    text-align: center;
+
+}
+
+section .info h2{
+    font-size: 14vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+
+
+}
+
+section:nth-child(1) .info h2{
+    background-image: url("https://imgur.com/ELla6Hd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+section:nth-child(2) .info h2{
+    background-image: url("https://imgur.com/ELla6Hd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section:nth-child(3) .info h2{
+    background-image: url("https://imgur.com/ELla6Hd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section .info p{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lead{
+    margin-bottom: 20px;
+}
+
+/* FANCY CARDS */
+/* .info_p{
     margin-bottom: 50px;
 }
 
@@ -105,26 +198,12 @@ body{
     color: azure;
 
 }
+*/
 
-#back_btn{
-    color: rgb(216, 210, 210);
-    text-decoration: underline;
-    text-decoration-color: azure;
-    font-size: 18px;
-    margin: 20px 0 15px 0;
-    padding-right: 50px;
-}
-
-#back_btn:hover{
-    text-shadow:  0.4em -0.3em 0.1em rgb(226, 204, 108);
-    font-weight: bold;
-    font-size: larger;
-
-}
 
 
 /* FOR TRANSITIONAL CARDS */
-.boxes{
+/* .boxes{
     background: rgb(226, 204, 108);
     overflow: hidden;
     padding: 5px;
@@ -156,7 +235,6 @@ body{
     left: 40px;
     right: 40px;
     bottom: 40px;
-    /* background: rgb(226, 204, 108); */
 }
 
 .caption:before{
@@ -193,21 +271,12 @@ body{
 
 .boxes:hover .caption:after{
     transform: scale(1,1);
-}
+} */
 
 
-::-webkit-scrollbar{
-    width: 15px;
-}
 
-::-webkit-scrollbar-track{
-    border: 7px solid;
-    box-shadow: inset 0 0 2.5px 2px rgb(0,0,0,0.5);
-}
 
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(45deg, rgb(226, 204, 108), azure);
-}
+
 
 
 
