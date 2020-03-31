@@ -12,7 +12,7 @@ $(document).ready(function() {
     //     let curtain = document.getElementById("curtain");
     //     curtain.classList.toggle("active")
 
-    }
+    // }
 
 
 
