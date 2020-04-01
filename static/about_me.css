@@ -1,24 +1,3 @@
-@media only screen and (max-width:600px) {
-    .nav-link {
-        display: inline;
-    }
-}
-
-@media screen and (max-device-width: 480px) and (orientation: portrait){
-    #name_header{
-        font-size: 3rem;
-        font-weight: 300;
-        line-height: 1.2;
-    }
-  }
-
-  @media screen and (min-device-width: 486px) and (orientation: portrait){
-    #name_header{
-        font-size: 4rem;
-        font-weight: 300;
-        line-height: 1.2;
-    }
-  }
 
 *{
     color: azure;
@@ -37,145 +16,43 @@ body{
     background-size: cover; */
 }
 
-#curtain{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+#back_btn_top{
+    color: rgb(216, 210, 210);
+    text-decoration: underline;
+    text-decoration-color: azure;
+    font-size: 18px;
 }
 
-#curtain span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    display: block;
-    transform-origin: bottom left;
-    transition: 0.5s ease-in-out;
-    transform: rotate(-90deg);
+#back_btn_top:hover{
+    text-shadow:  0.4em -0.3em 0.1em rgb(226, 204, 108);
+    font-weight: bold;
+    font-size: larger;
 
-}
-
-#curtain span:nth-child(1){
-    background: rgb(226, 204, 108);
-    transform: rotate(-90deg);
-    transition-delay: 0.2s;
-
-}
-#curtain span:nth-child(2){
-    background: rgb(105, 105, 105);
-    transform: rotate(-90deg);
-    transition-delay: 0.1s;
-
-}
-#curtain span:nth-child(3){
-    background: rgb(43, 43, 43);
-    transform: rotate(-90deg);
-    transition-delay: 0s;
-}
-
-#curtain.active span:nth-child(1){
-    z-index: 1;
-    transition-delay: 0s;
-}
-#curtain.active span:nth-child(2){
-    z-index: 2;
-    transition-delay: 0.1s;
-}
-#curtain.active span:nth-child(3){
-    z-index: 3;
-    transition-delay: 0.2s;
-}
-
-#curtain.active span{
-    transform: rotate(0deg);
-}
-
-.toggle{
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: url("C:\Users\white\Desktop\My Projects\Music Site\static\images\colored_menu_btn.png");
-    background-repeat: no-repeat;
-    background-position: 5px;
-    z-index: 1000;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-#curtain.active .toggle{
-    background: url("C:\Users\white\Desktop\My Projects\Music Site\static\images\close_btn.png");
-    background-repeat: no-repeat;
-    background-position: 5px;
-}
-
-ul{
-    position: absolute;
-    z-index: 100;
-    transition: 0.5s;
-    visibility: hidden;
-    opacity: 0;
-    transition-delay: 0s;
-
-}
-
-#curtain.active ul{
-    visibility: visible;
-    opacity: 0;
-    transition-delay: 0.7s;
-}
-
-#curtain ul li{
-    list-style: none;
-    margin: 10px 0;
-}
-
-
-
-.nav-link{
-    font-size: 16px;
-}
-
-
-
-#aboutme_nav_link{
-    color: rgb(226, 204, 108);
-    text-decoration-color: rgb(66, 61, 61);
 }
 
 #contactme_nav_link{
-    color: azure;
-    text-decoration-color: rgb(105, 105, 105);
+    color: rgb(216, 210, 210);
+    text-decoration: underline;
+    text-decoration-color: azure;
+    font-size: 18px;
+    margin-left: 10px;
 }
 
-#soundcloud_nav_link{
-    color: rgb(221, 124, 12);
-    text-decoration-color: rgb(105, 105, 105);
+#contactme_nav_link:hover{
+    text-shadow:  0.4em -0.3em 0.1em rgb(226, 204, 108);
+    font-weight: bold;
+    font-size: larger;
 }
 
-#youtube_nav_link{
-    color: rgb(182, 12, 12);
-    text-decoration-color: rgb(105, 105, 105);
-}
 
 #name_header{
-    margin-top: 60px;
     color: rgb(226, 204, 108);
 }
 
+#header_p{
+    font-family: 'Dosis', sans-serif;
 
-/* #name_header, #about_me_header, #about_me_p{
-    margin-bottom: 50px;
-} */
-
+}
 
 
 
@@ -225,14 +102,14 @@ section .info h2{
 }
 
 section:nth-child(1) .info h2{
-    background-image: url("https://imgur.com/gVkfVGT.jpg");
+    background-image: url("https://imgur.com/ELla6Hd.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 
 section:nth-child(2) .info h2{
-    background-image: url("https://imgur.com/ELla6Hd.jpg");
+    background-image: url("https://imgur.com/gVkfVGT.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -253,8 +130,26 @@ section .info p{
 .info_head{
     margin-bottom: 20px;
     font-family: 'Six Caps', sans-serif;
-    font-size: 3vw;
+    font-size: 3rem;
 }
+
+/* BACK TO TOP BTN */
+
+#up_btn_img{
+    max-width: 3rem;
+    border-radius: 20px;
+  }
+
+
+  #back_to_top{
+      margin-bottom: 25px;
+  }
+
+  #back_to_top img:hover{
+    box-shadow: 0 0 10px 4px rgb(117, 112, 90); 
+
+  }
+
 
 /* HOME BTN */
 
@@ -273,6 +168,40 @@ section .info p{
     font-size: larger;
 
 }
+
+@media only screen and (max-width:600px) {
+    .nav-link {
+        display: inline;
+    }
+    .info_head{
+        font-size: 2rem;
+    }
+    
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    #name_header{
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .info_head{
+        font-size: 2rem;
+    }
+    
+  }
+
+  @media screen and (min-device-width: 486px) and (orientation: portrait){
+    #name_header{
+        font-size: 4rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .info_head{
+        font-size: 2rem;
+    }
+    
+  }
 
 
 
