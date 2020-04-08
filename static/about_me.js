@@ -12,5 +12,10 @@ $(document).ready(function() {
     });
 
 
+    // MAKE SPANS LIGHT UP WHEN HOVERED
+
+    
+
+
 });
 

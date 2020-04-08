@@ -133,6 +133,10 @@ section .info p{
     font-size: 3rem;
 }
 
+.info_span{
+    color: rgb(226, 204, 108);
+}
+
 /* BACK TO TOP BTN */
 
 #up_btn_img{
