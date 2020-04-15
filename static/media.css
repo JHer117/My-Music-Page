@@ -1,0 +1,289 @@
+
+*{
+    color: azure;
+
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: rgb(43, 43, 43);
+    /* background: url("https://i.imgur.com/UchrwtG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+#back_btn_top{
+    color: rgb(216, 210, 210);
+    text-decoration: underline;
+    text-decoration-color: azure;
+    font-size: 18px;
+}
+
+#back_btn_top:hover{
+    text-shadow:  0.4em -0.3em 0.1em rgb(226, 204, 108);
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+#contactme_nav_link{
+    color: rgb(216, 210, 210);
+    text-decoration: underline;
+    text-decoration-color: azure;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+#contactme_nav_link:hover{
+    text-shadow:  0.4em -0.3em 0.1em rgb(226, 204, 108);
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+#name_header{
+    color: rgb(226, 204, 108);
+}
+
+#header_p{
+    font-family: 'Dosis', sans-serif;
+
+}
+
+
+
+/* SCROLL BAR */
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    border: 7px solid;
+    box-shadow: inset 0 0 2.5px 2px rgb(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(45deg, rgb(226, 204, 108), azure);
+}
+
+
+
+/* MEDIA GALLERY */
+
+.media-section{
+    width: 100%;
+    padding: 60px;
+
+}
+
+.inner-width{
+    width:  100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+
+
+}
+
+.media-section h1{
+    text-align: center;
+
+}
+
+.border{
+    width: 180px;
+    height: 4px;
+    margin: 60px auto;
+    background: rgb(226, 204, 108);
+}
+
+.media-section .gallery{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+
+}
+
+
+.media-section .image{
+    flex: 25%;
+    overflow: hidden;
+}
+
+.media-section .image img{
+    width: 100%;
+    height: 95%;
+    transition: 5s;
+}
+
+.media-section .image:hover img{
+    transform: scale(1.4) rotate(15deg);
+}
+
+#vid-section .image:hover img{
+    transform: scale(1.4) rotate(-15deg);
+}
+
+
+
+
+/* BACK TO TOP BTN */
+
+#up_btn_img{
+    max-width: 3rem;
+    border-radius: 20px;
+  }
+
+
+  #back_to_top{
+      position: fixed;
+      left: 96.5%;
+      top: 89%;
+      
+  }
+
+  #back_to_top img:hover{
+    box-shadow: 0 0 10px 4px rgb(117, 112, 90); 
+
+  }
+
+
+  /* HOME BTN */
+
+#back_btn{
+    color: rgb(216, 210, 210);
+    text-decoration: underline;
+    text-decoration-color: azure;
+    font-size: 18px;
+    margin: 20px 0 15px 0;
+    padding-right: 50px;
+}
+
+#back_btn:hover{
+    text-shadow:  0.4em -0.3em 0.1em rgb(226, 204, 108);
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+
+@media only screen and (max-width:600px) {
+    .nav-link {
+        display: inline;
+    }
+    .info_head{
+        font-size: 2rem;
+    }
+    
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    #name_header{
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .info_head{
+        font-size: 2rem;
+    }
+    
+  }
+
+  @media screen and (min-device-width: 486px) and (orientation: portrait){
+    #name_header{
+        font-size: 4rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .info_head{
+        font-size: 2rem;
+    }
+    
+  }
+
+
+
+@media screen and (max-width: 960px) {
+    .media-section .image{
+        flex: 33.33%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .media-section .image{
+        flex: 57%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .media-section .image{
+        flex: 100%;
+    }
+}
+
+
+@media screen and (max-width:960px) {
+    #up_btn_img{
+        max-width: 2.5rem;
+        border-radius: 10px;
+      }
+    
+    
+      #back_to_top{
+          position: fixed;
+          left: 95%;
+          top: 87%;
+          
+      }
+    
+      #back_to_top img:hover{
+        box-shadow: 0 0 10px 4px rgb(117, 112, 90); 
+    
+      }
+}
+
+
+
+
+@media screen and (min-device-width: 480px) and (orientation:portrait){
+    #up_btn_img{
+        max-width: 2.5rem;
+        border-radius: 10px;
+      }
+    
+    
+      #back_to_top{
+          position: fixed;
+          left: 90%;
+          top: 87%;
+          
+      }
+    
+      #back_to_top img:hover{
+        box-shadow: 0 0 10px 4px rgb(117, 112, 90); 
+    
+      }
+
+}  
+
+@media screen and (min-device-width: 486px) and (orientation: portrait){
+    #up_btn_img{
+        max-width: 2rem;
+        border-radius: 10px;
+      }
+    
+    
+      #back_to_top{
+          position: fixed;
+          left: 93%;
+          top: 89%;
+          
+      }
+    
+      #back_to_top img:hover{
+        box-shadow: 0 0 10px 4px rgb(117, 112, 90); 
+    
+      }
+}
